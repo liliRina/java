@@ -1,0 +1,30 @@
+package DB;
+
+
+import jakarta.persistence.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "Calorie",
+        schema = "products"
+)
+@Data
+@NoArgsConstructor
+public class Calorie implements EntityFromTable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private Integer calorificValue;
+
+    // одна калорийность - много колобков
+    // @JoinColumn(name = "flour_trademark")
+    @Column(name = "flour_trademark", unique = true, columnDefinition = "VARCHAR(255)")
+    private String flourTrademark;
+
+    Calorie(Integer calorificValue, String flourTrademark) {
+        this.calorificValue = calorificValue;
+        this.flourTrademark = flourTrademark;
+    }
+}
