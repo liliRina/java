@@ -15,8 +15,6 @@ public class Calorie implements EntityFromTable {
 
     private Integer calorificValue;
 
-    // одна калорийность - много колобков
-    // @JoinColumn(name = "flour_trademark")
     @Column(name = "flour_trademark", unique = true, columnDefinition = "VARCHAR(255)")
     private String flourTrademark;
 

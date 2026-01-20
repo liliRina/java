@@ -23,7 +23,7 @@ class Love extends Attitude implements Degree{
     private int degree ;
 
     @Override
-    public String reply(){ // сделаю паблик
+    public String reply(){
         if (degree < bound)
             return "Pfff";
         else
