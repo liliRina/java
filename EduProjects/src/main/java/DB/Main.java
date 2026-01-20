@@ -16,12 +16,6 @@ public class Main {
     }
 
     public static void main(String[] args) throws ClassNotFoundException, InterruptedException {
-
-        //HibernateConfig config = new HibernateConfig();
-
-        //createKoloboks();
-        //fullCreateKoloboks();
-
         HibernateConfig.shutdown();
     }
 

@@ -7,7 +7,6 @@ import org.hibernate.annotations.NotFoundAction;
 
 @Entity
 @Table(name = "Koloboks",  // Имя таблицы (если не указать = имя класса)
-schema = "products",
 uniqueConstraints = {
         @UniqueConstraint(
         name = "uniqueName", // Имя ограничения в БД

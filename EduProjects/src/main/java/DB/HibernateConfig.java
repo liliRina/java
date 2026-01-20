@@ -8,7 +8,7 @@ import jakarta.persistence.EntityManagerFactory;
 import lombok.Getter;
 
 public class HibernateConfig {
-    static final String url = "jdbc:postgresql://localhost:5432/postgres";
+    static final String url = "jdbc:postgresql://localhost:5432/koloboks";
     static final String user = "postgres";
     static final String password = "12345"; // твой пароль
 

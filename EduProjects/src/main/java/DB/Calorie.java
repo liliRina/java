@@ -1,15 +1,11 @@
 package DB;
 
-
-
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "Calorie",
-        schema = "products"
-)
+@Table(name = "Calorie")
 @Data
 @NoArgsConstructor
 public class Calorie implements EntityFromTable {
