@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Редактор состава</title>
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .composition-container {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid #4CAF50;
+            margin-bottom: 30px;
+        }
+
+        .current-composition {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            padding: 15px;
+            background: white;
+            border-radius: 6px;
+            border-left: 4px solid #2196F3;
+            min-height: 60px;
+        }
+
+        .components-list {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        .component-item {
+            background: #e3f2fd;
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 4px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .add-form {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            transition: border 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        .add-btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .add-btn:hover {
+            background: #45a049;
+        }
+
+        .clear-btn {
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        .empty-state {
+            color: #757575;
+            font-style: italic;
+            text-align: center;
+            padding: 30px;
+            background: #f5f5f5;
+            border-radius: 6px;
+            border: 2px dashed #ddd;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>📝 Редактор состава</h1>
+
+<div class="composition-container">
+    <!-- Текущий состав -->
+    <div class="current-composition">
+        <strong>Текущий состав:</strong>
+        <div class="components">
+            <span th:text="${components}"></span>
+        </div>
+    </div>
+
+    <!-- Форма добавления -->
+    <form th:action="@{/choosing/add}" method="post" class="add-form">
+        <input type="text"
+               name="component"
+               placeholder="Введите новый компонент (например: вода, глицерин...)"
+               required
+               autofocus>
+        <button type="submit" class="add-btn">+ Добавить</button>
+    </form>
+
+    <!-- Кнопка очистки -->
+    <div style="text-align: right; margin-top: 20px;">
+        <form th:action="@{/choosing/clear}" method="post">
+            <button type="submit" class="clear-btn">
+                🗑️ Очистить весь состав
+            </button>
+        </form>
+    </div>
+</div>
+
+<form th:action="@{/choosing/search}" method="post">
+    <button type="submit" class="search-btn">🔍 Найти продукты</button>
+</form>
+
+</body>
+</html>

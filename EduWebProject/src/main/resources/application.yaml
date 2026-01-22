@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: eduApp
+  main:
+    banner-mode: off
+  security:
+    enabled: false
+  config:
+    import:
+        - classpath:config/db/datasource.yaml
+        - classpath:config/db/jpa.yaml
+
+#  flyway:
+#    enabled: true
+#    locations: classpath:db/migration
+#    baseline-on-migrate: true
+
+logging:
+  level:
+    root: WARN
+
+    org.springframework: WARN
+    org.springframework.web: WARN
+    org.springframework.boot: WARN
+
+    org.hibernate: ERROR
+    org.hibernate.SQL: OFF
+    org.hibernate.type: OFF
+
+    org.apache.tomcat: ERROR
+
+    com.zaxxer.hikari: ERROR
+
+    com.eduapp: INFO
+server:
+  servlet:
+    session:
+      timeout: 1800
+      cookie:
+        name: JSESSIONID
+        http-only: true
+        secure: false
+        same-site: lax
+      tracking-modes: cookie

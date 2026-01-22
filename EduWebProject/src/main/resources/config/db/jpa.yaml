@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    open-in-view: false
+
+    hibernate:
+      ddl-auto: update
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        order_inserts: true #Сортирует INSERT запросы по типу таблицы перед отправкой в БД.
+        order_updates: true
+        jdbc:
+          batch_size: 25 # Размер пачки (batch) для INSERT/UPDATE.
+          fetch_size: 100
+        query:
+          in_clause_parameter_padding: true # при запросе создаются кэш размера степени 2. Меньше сохранённых кешей
+
+    show-sql: false
+
