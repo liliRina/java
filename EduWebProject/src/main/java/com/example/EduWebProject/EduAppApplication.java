@@ -6,12 +6,10 @@ import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication()
 public class EduAppApplication {
-
-    public EduAppApplication(Init init) {
-		init.init();
-    }
-
     public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(EduAppApplication.class, args);
 	}
 }
+//psql -U postgres
+// \c cosmetics
+// \dt

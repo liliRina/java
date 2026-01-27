@@ -10,11 +10,6 @@ spring:
         - classpath:config/db/datasource.yaml
         - classpath:config/db/jpa.yaml
 
-#  flyway:
-#    enabled: true
-#    locations: classpath:db/migration
-#    baseline-on-migrate: true
-
 logging:
   level:
     root: WARN

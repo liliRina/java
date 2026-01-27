@@ -1,34 +1,23 @@
 package com.example.EduWebProject.entities;
 import jakarta.persistence.*;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @NoArgsConstructor
-final public class Cream extends Product {
-
+@EqualsAndHashCode(callSuper = true)
+@ToString(callSuper = true)
+public class Cream extends Product {
     @Enumerated(EnumType.STRING)
     private SkinType skinType;
 
-    public Cream(String name, String producer, String composition, Double price) {
-        super(name, producer, composition, price);
+    public Cream(String name, String brand, String composition, Double price) {
+        super(name, brand, composition, price);
     }
 
-    public Cream(String name, String producer, Double price) {
-        super(name, producer, "", price);
-    }
-
-    @Override
-    public boolean equals(Object obj){
-        if (obj instanceof Cream c)
-            return super.equals(obj) && c.skinType.equals(skinType);
-
-        return false;
-    }
-    @Override
-    public String toString() {
-        return name + " " +
-                producer + " " +
-                price.toString();
+    public Cream(String name, String brand, Double price) {
+        super(name, brand, "", price);
     }
 
     public enum SkinType {

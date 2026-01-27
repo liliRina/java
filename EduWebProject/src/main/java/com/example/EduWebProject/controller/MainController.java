@@ -1,5 +1,6 @@
 package com.example.EduWebProject.controller;
 
+import com.example.EduWebProject.LoaderToDB;
 import com.example.EduWebProject.entities.Product;
 import com.example.EduWebProject.service.ProductService;
 
@@ -14,19 +15,26 @@ import java.util.*;
 @Controller
 public class MainController {
     private final ProductService productService;
-    public MainController(ProductService productService){
-        this.productService = productService;
+    private final LoaderToDB loaderToDB;
 
+    public MainController(ProductService productService, LoaderToDB loaderToDB){
+        this.productService = productService;
+        this.loaderToDB = loaderToDB;
     }
 
     @GetMapping("/")
     public String mainPage() {
-        return "hello";
+        return "main_page";
+    }
+
+    @PostMapping("/load_to_database")
+    public String loadToDatabase(@RequestParam String file) {
+        loaderToDB.loadFromFile(file);
+        return "redirect:/choosing";
     }
 
     @GetMapping("/choosing")
-    public String choosingPage(@SessionAttribute(name = "components", required = false)
-                                   String components,
+    public String choosingPage(@SessionAttribute(name = "components", required = false) String components,
                                Model model) {
         System.out.println("choosing: " + components);
         model.addAttribute("components", components != null ? components : "");
@@ -53,9 +61,9 @@ public class MainController {
     public String addComponent(@RequestParam String component, HttpSession session){
         System.out.println(component);
         if (session.getAttribute("components") == null)
-            session.setAttribute("components",component + ", ");
+            session.setAttribute("components", component);
         else
-            session.setAttribute("components", (String) session.getAttribute("components") + component + ", ");
+            session.setAttribute("components", (String) session.getAttribute("components") + ", " + component);
         System.out.println("session components: " + session.getAttribute("components"));
         return "redirect:/choosing";
     }
@@ -63,7 +71,7 @@ public class MainController {
     @PostMapping("/choosing/clear")
     public String clearComponents(HttpSession session){
         System.out.println("clear");
-        session.setAttribute("components",  "");
+        session.setAttribute("components",  null);
         return "redirect:/choosing";
     }
 }

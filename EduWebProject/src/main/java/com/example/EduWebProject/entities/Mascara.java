@@ -1,20 +1,23 @@
 package com.example.EduWebProject.entities;
 
 import jakarta.persistence.*;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @NoArgsConstructor
-final public class Mascara extends Product {
-
+@EqualsAndHashCode(callSuper = true)
+@ToString(callSuper = true)
+public class Mascara extends Product {
     @Column(nullable = true)
     private String color;
 
-    @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof Mascara m)
-            return super.equals(obj) && m.color.equals(color);
-
-        return false;
+    public Mascara(String name, String brand, String composition, Double price) {
+        super(name, brand, composition, price);
     }
+    public Mascara(String name, String brand, Double price) {
+        super(name, brand, "", price);
+    }
+
 }

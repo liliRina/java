@@ -2,12 +2,14 @@ package com.example.EduWebProject.entities;
 import jakarta.persistence.*;
 
 import lombok.RequiredArgsConstructor;
+import lombok.NonNull;
 
+import java.util.Objects;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "product_type") // столбец-метка
-@RequiredArgsConstructor
+@RequiredArgsConstructor()
 public abstract class Product {
 
     @Id
@@ -15,21 +17,31 @@ public abstract class Product {
     int id;
 
     @Column(nullable = false)
-
-    @lombok.NonNull
+    @NonNull
     protected String name;
 
     @Column(nullable = false)
-    @lombok.NonNull
-    protected String producer;
+    @NonNull
+    protected String brand;
 
-    @lombok.NonNull
+    @NonNull
     @Column(nullable = false)
     protected String composition;
 
-    @lombok.NonNull
+    @NonNull
     @Column(name = "price", nullable = false, columnDefinition = "DECIMAL(10,2) DEFAULT 0.00")  // не кроссплатформенный
     protected Double price;
+
+    public Product(){
+        this("", "","",  100.0);
+    }
+
+    @Override
+    public String toString() {
+        return name + " " +
+                brand + " " +
+                price.toString();
+    }
 
     @Override
     public boolean equals(Object obj){
@@ -39,15 +51,15 @@ public abstract class Product {
             return false;
         Product product = (Product) obj;
         if (product.name.equals(name)
-                && product.producer.equals(producer)
+                && product.brand.equals(brand)
                 && product.composition.equals(composition)
                 && product.price.equals(price))
             return true;
 
         return false;
     }
-
-    public Product(){
-        this("", "","",  100.0);
+    @Override
+    public int hashCode(){
+        return Objects.hash(name, brand, composition, price);
     }
 }

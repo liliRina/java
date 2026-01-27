@@ -55,14 +55,12 @@
     <connection id="3f0eff58-e605-4a48-9b26-32d3a7272426" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="3f0eff58-e605-4a48-9b26-32d3a7272426" dataset="public.mascara" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="3f0eff58-e605-4a48-9b26-32d3a7272426" dataset="public.cream" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="3f0eff58-e605-4a48-9b26-32d3a7272426" dataset="public.product" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
-  </component>
-  <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/src/main/resources/migration/create_table.sql" connection-id="3f0eff58-e605-4a48-9b26-32d3a7272426" session-id="MAIN" current-schema="products" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
