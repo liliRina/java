@@ -16,7 +16,6 @@ import java.util.*;
 public class MainController {
     private final ProductService productService;
     private final LoaderToDB loaderToDB;
-
     public MainController(ProductService productService, LoaderToDB loaderToDB){
         this.productService = productService;
         this.loaderToDB = loaderToDB;

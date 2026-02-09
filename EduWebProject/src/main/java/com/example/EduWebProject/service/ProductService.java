@@ -18,6 +18,7 @@ import org.springframework.validation.annotation.Validated;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.IntStream;
 
 @Service
 @RequiredArgsConstructor
@@ -61,10 +62,7 @@ public class ProductService {
             return Collections.emptyList();
         Specification<Product> spec = (root, query, cb) -> {
             String[] components = composition.split(", ");
-            Predicate[] predicates = new Predicate[components.length];
-            for (int i = 0; i < components.length; i++) {
-                predicates[i] = cb.like(root.get("composition"), "%" + components[i] + "%");
-            }
+            Predicate[] predicates = IntStream.range(0, components.length).mapToObj(i -> cb.like(root.get("composition"), "%" + components[i] + "%")).toArray(Predicate[]::new);
             return cb.and(predicates);
         };
         return productRepository.findAll(spec);
