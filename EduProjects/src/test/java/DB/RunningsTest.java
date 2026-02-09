@@ -114,7 +114,6 @@ class RunningsTest {
             Phaser phaser = new Phaser(1);
             while (curCnt < kolobokCnt) {
                 Future<String> future = pair.poll();
-
                 if (future != null) {
                     name = future.get();
                     if (namePrev != null){
