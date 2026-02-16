@@ -9,7 +9,7 @@
    - **[Love](EduProjects/src/main/java/Love)** — Десктоп-приложение (Swing) с полиморфизмом, наследованием.
 
 
-2. **[EduWebProject](EduWebProject/README.md)** — Веб-приложение на Spring Boot для поиска косметики по ингредиентам.
+2. **[EduWebProject](EduWebProject/README.md)** — Веб-приложение на Spring Boot для поиска косметики по ингредиентам.  
    **Стек**: Spring Boot, Spring MVC/Data JPA, Hibernate, HikariCP, Lombok, Validation, Jackson, JUnit5.  
    **Архитектура**: классический MVC (Entity, Repository, Service, Controller).
    
