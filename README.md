@@ -1,9 +1,9 @@
 # java
-Мои pet-проекты, чтобы показать навыки. Более подробное описание проектов во внутренних README.
+Мои pet-проекты. Более подробное описание проектов во внутренних README.
 
 ### Основные проекты
 
-1. **[EduProjects](EduProjects)** — Задачи по core Java  
+1. **[EduProjects](EduProjects/src/main/java/)** — Задачи по core Java  
    - **[DB](EduProjects/src/main/java/DB)** — Использование БД и многопоточности.
    - **[LeetCode](EduProjects/src/main/java/LeetCode)** — Решения задач с LeetCode с Stream API, лямбдами, Optional.
    - **[Love](EduProjects/src/main/java/Love)** — Десктоп-приложение (Swing) с полиморфизмом, наследованием.
