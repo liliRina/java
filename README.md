@@ -1,7 +1,7 @@
 # java
 Мои pet-проекты. Более подробное описание проектов во внутренних README.
 
-### Основные проекты
+### Проекты
 
 1. **[EduProjects](EduProjects/src/main/java/)** — Задачи по core Java  
    - **[DB](EduProjects/src/main/java/DB)** — Использование БД и многопоточности.
