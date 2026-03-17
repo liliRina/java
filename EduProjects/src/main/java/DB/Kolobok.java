@@ -78,7 +78,7 @@ enum EyesColor{
     Grey(4);
 
     private final int number;
-    private final static int divider = 4;
+    private static int divider = 4;
 
     EyesColor(int num){
         number = num;

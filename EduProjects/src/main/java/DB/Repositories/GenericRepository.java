@@ -51,7 +51,6 @@ public abstract class GenericRepository <T> {
 
                     if (e instanceof ConstraintViolationException)
                         return Optional.empty();
-
                     try{
                         Thread.sleep(100); // Ждём и пробуем снова
                     }

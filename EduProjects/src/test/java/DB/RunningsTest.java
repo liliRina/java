@@ -128,7 +128,7 @@ class RunningsTest {
                         });
                         t.start();
                         Thread t2 = new Thread(() -> {
-                            System.err.println("start setLoser" + idLoser + " " + idWinner);
+                            System.err.println("start setLoser " + idLoser + " " + idWinner);
                             kolobokRepo.setLoser(idLoser, idWinner);
                             phaser.arrive();
                         });
