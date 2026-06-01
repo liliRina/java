@@ -1,0 +1,41 @@
+[ {
+  "contractNumber" : 1,
+  "car" : {
+    "vin" : "1234567890qwertyu",
+    "brand" : "BMW",
+    "model" : "X5",
+    "year" : "2020",
+    "price" : 50000.000000,
+    "status" : "Available"
+  },
+  "client" : {
+    "id" : 1,
+    "fullName" : "Иванов",
+    "passportNumber" : "1234567890",
+    "phoneNumber" : "+71234567890"
+  },
+  "monthsCnt" : 12,
+  "initialPayment" : 1000.000000,
+  "rate" : 12.0,
+  "status" : "ACTIVE"
+}, {
+  "contractNumber" : 2,
+  "car" : {
+    "vin" : "1234567890qwertyu",
+    "brand" : "BMW",
+    "model" : "X5",
+    "year" : "2020",
+    "price" : 50000.000000,
+    "status" : "Available"
+  },
+  "client" : {
+    "id" : 1,
+    "fullName" : "Иванов",
+    "passportNumber" : "1234567890",
+    "phoneNumber" : "+71234567890"
+  },
+  "monthsCnt" : 12,
+  "initialPayment" : 1000.000000,
+  "rate" : 12.0,
+  "status" : "ACTIVE"
+} ]
