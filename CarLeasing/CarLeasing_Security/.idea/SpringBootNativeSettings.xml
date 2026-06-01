@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SpringBootNativeSettings">
+    <option name="linkedExternalProjectsSettings">
+      <NativeProjectSettings>
+        <option name="externalProjectPath" value="-DebugSession-" />
+        <option name="runConfigurationId" value="LeasingApplication" />
+      </NativeProjectSettings>
+      <NativeProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/src/main/java/ru/bell/Main.java" />
+        <option name="qualifiedMainClassName" value="ru.bell.LeasingApplication" />
+        <option name="runConfigurationName" value="LeasingApplication" />
+        <option name="runConfigurationType" value="APPLICATION" />
+      </NativeProjectSettings>
+    </option>
+  </component>
+</project>

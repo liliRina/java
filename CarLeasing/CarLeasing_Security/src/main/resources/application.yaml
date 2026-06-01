@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: CarLeasing_Security
+  datasource:
+    url: jdbc:postgresql://localhost:5432/car_leasing
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+#    hikari:
+#      maximum-pool-size: 10
+#      minimum-idle: 5
+
+  jpa:
+
+    show-sql: true                                       # Показывать SQL в логах
+    hibernate:
+      ddl-auto: update                                   # Стратегия DDL
+  properties:
+    hibernate:
+      format_sql: true                                 # Форматировать SQL
+      dialect: org.hibernate.dialect.PostgreSQLDialect # Диалект PostgreSQL
+      jdbc:
+        batch_size: 20                                # Размер пакетной обработки
+      order_inserts: true                              # Оптимизация INSERT
+      order_updates: true                              # Оптимизация UPDATE
+      generate_statistics: true                       # Сбор статистики
+
+
