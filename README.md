@@ -7,6 +7,7 @@
    - **[DB](EduProjects/src/main/java/DB)** — Использование БД и многопоточности.
    - **[LeetCode](EduProjects/src/main/java/LeetCode)** — Решения задач с LeetCode с Stream API, лямбдами, Optional.
    - **[Love](EduProjects/src/main/java/Love)** — Десктоп-приложение (Swing) с полиморфизмом, наследованием.
+   - **[Kaktusa](EduProjects/src/main/java/Kaktusa)** — Подготовка к собеседованиям (лямбды, Stream API, коллекции, Optional).
 
 
 2. **[EduWebProject](EduWebProject/README.md)** — Веб-приложение на Spring Boot для поиска косметики по ингредиентам.  
