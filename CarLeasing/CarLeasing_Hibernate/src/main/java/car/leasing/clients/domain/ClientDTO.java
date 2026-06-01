@@ -1,0 +1,28 @@
+package car.leasing.clients.domain;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+
+@Getter
+@EqualsAndHashCode
+public class ClientDTO {
+    @NotBlank(message = "ФИО не может быть пустым")
+    @Pattern(regexp = "^[A-Za-zА-Яа-я]+(?:[ -][A-Za-zА-Яа-я]+)*$", message = "ФИО должно содержать буквы и разделители: пробел и -")
+    private final String fullName;
+
+    @NotBlank(message = "Номер паспорта не может быть пустым")
+    @Pattern(regexp = "^\\d{10}$", message = "Паспорт должен состоять из 10 цифр")
+    private final String passportNumber;
+
+    @NotBlank(message = "Телефонный номер не может быть пустым")
+    @Pattern(regexp = "^\\+7\\d{10}$", message = "Телефон должен иметь формат \"+7XXXXXXXXXX\"")
+    private final String phoneNumber;
+
+    public ClientDTO(String fullName, String passportNumber, String phoneNumber){
+        this.fullName = fullName.strip();
+        this.passportNumber = passportNumber.strip();
+        this.phoneNumber = phoneNumber.strip();
+    }
+}
