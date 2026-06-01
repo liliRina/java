@@ -1,0 +1,162 @@
+[ {
+  "vin" : "1HGCM82633A123456",
+  "brand" : "Honda",
+  "model" : "Accord",
+  "year" : "2020",
+  "price" : 25000.000000,
+  "status" : "Available"
+}, {
+  "vin" : "2FMDK3GC3DBA12345",
+  "brand" : "Ford",
+  "model" : "Focus",
+  "year" : "2023",
+  "price" : 22000.500000,
+  "status" : "InUse"
+}, {
+  "vin" : "3VWFE21C04M123456",
+  "brand" : "Volkswagen",
+  "model" : "Golf",
+  "year" : "2018",
+  "price" : 18000.750000,
+  "status" : "InUse"
+}, {
+  "vin" : "4T1BF1FKXEU123456",
+  "brand" : "Toyota",
+  "model" : "Camry",
+  "year" : "2025",
+  "price" : 32000.000000,
+  "status" : "Available"
+}, {
+  "vin" : "5NPD84LF2KH123456",
+  "brand" : "Hyundai",
+  "model" : "Elantra",
+  "year" : "2021",
+  "price" : 21000.990000,
+  "status" : "InUse"
+}, {
+  "vin" : "123456789qwerYUIu",
+  "brand" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "model" : "BMVх5Ххъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.000000,
+  "status" : "Available"
+}, {
+  "vin" : "9556qweRTYuioQWEr",
+  "brand" : "123456789qwerYUIu",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.000000,
+  "status" : "Available"
+}, {
+  "vin" : "5151qweRTYuioQWEr",
+  "brand" : "123456789qwerYUIu",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.000000,
+  "status" : "Available"
+}, {
+  "vin" : "5355qweRTYuioQWEr",
+  "brand" : "123456789qwerYUIu",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.000000,
+  "status" : "Available"
+}, {
+  "vin" : "5926qweRTYuioQWEr",
+  "brand" : "123456789qwerYUIu",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.000000,
+  "status" : "Available"
+}, {
+  "vin" : "7271qweRTYuioQWEr",
+  "brand" : "123456789qwerYUIu",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.000000,
+  "status" : "Available"
+}, {
+  "vin" : "143456789qwerYUIu",
+  "brand" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 8000.000000,
+  "status" : "Available"
+}, {
+  "vin" : "123456qweRTYuioQW",
+  "brand" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 8000.000000,
+  "status" : "Available"
+}, {
+  "vin" : "9198qweRTYuioQWEr",
+  "brand" : "123456789qwerYUIu",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.000000,
+  "status" : "Available"
+}, {
+  "vin" : "8781qweRTYuioQWEr",
+  "brand" : "123456789qwerYUIu",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.000000,
+  "status" : "Available"
+}, {
+  "vin" : "2745qweRTYuioQWEr",
+  "brand" : "123456789qwerYUIu",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.000000,
+  "status" : "Available"
+}, {
+  "vin" : "7579qweRTYuioQWEr",
+  "brand" : "123456789qwerYUIu",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.000000,
+  "status" : "Available"
+}, {
+  "vin" : "6356qweRTYuioQWEr",
+  "brand" : "123456789qwerYUIu",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.000000,
+  "status" : "Available"
+}, {
+  "vin" : "6633qweRTYuioQWEr",
+  "brand" : "123456789qwerYUIu",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.000000,
+  "status" : "Available"
+}, {
+  "vin" : "5352qweRTYuioQWEr",
+  "brand" : "123456789qwerYUIu",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.000000,
+  "status" : "Available"
+}, {
+  "vin" : "9222qweRTYuioQWEr",
+  "brand" : "123456789qwerYUIu",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.000000,
+  "status" : "Available"
+}, {
+  "vin" : "7550qweRTYuioQWEr",
+  "brand" : "123456789qwerYUIu",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.900000,
+  "status" : "Available"
+}, {
+  "vin" : "1504qweRTYuioQWEr",
+  "brand" : "123456789qwerYUIu",
+  "model" : "BMVХхъ{}{???///++...!#$%^&*(",
+  "year" : "2007",
+  "price" : 23.900000,
+  "status" : "Available"
+} ]

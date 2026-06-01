@@ -1,0 +1,319 @@
+[ {
+  "contractNumber" : 1,
+  "car" : {
+    "vin" : "123456789qwerYUIu",
+    "brand" : "BMVХхъ{}{???///++...!#$%^&*(",
+    "model" : "BMVх5Ххъ{}{???///++...!#$%^&*(",
+    "year" : "2007",
+    "price" : 23.000000,
+    "status" : "Available"
+  },
+  "client" : {
+    "id" : 1,
+    "fullName" : "Иван Петров",
+    "passportNumber" : "1234567890",
+    "phoneNumber" : "+71234567890"
+  },
+  "monthsCnt" : 8,
+  "initialPayment" : 11.600000,
+  "rate" : 45.6,
+  "status" : "CLOSED",
+  "paymentSchedule" : [ {
+    "number" : 1,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 2,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 3,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 4,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 5,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 6,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 7,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 8,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  } ],
+  "indCurPayment" : 0
+}, {
+  "contractNumber" : 2,
+  "car" : {
+    "vin" : "123456789qwerYUIu",
+    "brand" : "BMVХхъ{}{???///++...!#$%^&*(",
+    "model" : "BMVх5Ххъ{}{???///++...!#$%^&*(",
+    "year" : "2007",
+    "price" : 23.000000,
+    "status" : "Available"
+  },
+  "client" : {
+    "id" : 1,
+    "fullName" : "Иван Петров",
+    "passportNumber" : "1234567890",
+    "phoneNumber" : "+71234567890"
+  },
+  "monthsCnt" : 8,
+  "initialPayment" : 11.600000,
+  "rate" : 45.6,
+  "status" : "CLOSED",
+  "paymentSchedule" : [ {
+    "number" : 1,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 2,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 3,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 4,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 5,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 6,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 7,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 8,
+    "payment" : 1.679262,
+    "status" : "NOT_PAID"
+  } ],
+  "indCurPayment" : 8
+}, {
+  "contractNumber" : 3,
+  "car" : {
+    "vin" : "123456789qwerYUIu",
+    "brand" : "BMVХхъ{}{???///++...!#$%^&*(",
+    "model" : "BMVх5Ххъ{}{???///++...!#$%^&*(",
+    "year" : "2007",
+    "price" : 23.000000,
+    "status" : "Available"
+  },
+  "client" : {
+    "id" : 1,
+    "fullName" : "Иван Петров",
+    "passportNumber" : "1234567890",
+    "phoneNumber" : "+71234567890"
+  },
+  "monthsCnt" : 2,
+  "initialPayment" : 11.600000,
+  "rate" : 45.6,
+  "status" : "CLOSED",
+  "paymentSchedule" : [ {
+    "number" : 1,
+    "payment" : 6.026919,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 2,
+    "payment" : 6.026919,
+    "status" : "NOT_PAID"
+  } ],
+  "indCurPayment" : 2
+}, {
+  "contractNumber" : 4,
+  "car" : {
+    "vin" : "123456789qwerYUIu",
+    "brand" : "BMVХхъ{}{???///++...!#$%^&*(",
+    "model" : "BMVх5Ххъ{}{???///++...!#$%^&*(",
+    "year" : "2007",
+    "price" : 23.000000,
+    "status" : "Available"
+  },
+  "client" : {
+    "id" : 1,
+    "fullName" : "Иван Петров",
+    "passportNumber" : "1234567890",
+    "phoneNumber" : "+71234567890"
+  },
+  "monthsCnt" : 2,
+  "initialPayment" : 11.600000,
+  "rate" : 45.6,
+  "status" : "CLOSED",
+  "paymentSchedule" : [ {
+    "number" : 1,
+    "payment" : 6.026919,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 2,
+    "payment" : 6.026919,
+    "status" : "NOT_PAID"
+  } ],
+  "indCurPayment" : 2
+}, {
+  "contractNumber" : 5,
+  "car" : {
+    "vin" : "123456789qwerYUIu",
+    "brand" : "BMVХхъ{}{???///++...!#$%^&*(",
+    "model" : "BMVх5Ххъ{}{???///++...!#$%^&*(",
+    "year" : "2007",
+    "price" : 23.000000,
+    "status" : "Available"
+  },
+  "client" : {
+    "id" : 1,
+    "fullName" : "Иван Петров",
+    "passportNumber" : "1234567890",
+    "phoneNumber" : "+71234567890"
+  },
+  "monthsCnt" : 2,
+  "initialPayment" : 11.600000,
+  "rate" : 45.6,
+  "status" : "CLOSED",
+  "paymentSchedule" : [ {
+    "number" : 1,
+    "payment" : 6.026919,
+    "status" : "PAID"
+  }, {
+    "number" : 2,
+    "payment" : 6.026919,
+    "status" : "PAID"
+  } ],
+  "indCurPayment" : 2
+}, {
+  "contractNumber" : 6,
+  "car" : {
+    "vin" : "123456789qwerYUIu",
+    "brand" : "BMVХхъ{}{???///++...!#$%^&*(",
+    "model" : "BMVх5Ххъ{}{???///++...!#$%^&*(",
+    "year" : "2007",
+    "price" : 23.000000,
+    "status" : "Available"
+  },
+  "client" : {
+    "id" : 1,
+    "fullName" : "Иван Петров",
+    "passportNumber" : "1234567890",
+    "phoneNumber" : "+71234567890"
+  },
+  "monthsCnt" : 2,
+  "initialPayment" : 11.600000,
+  "rate" : 45.6,
+  "status" : "CLOSED",
+  "paymentSchedule" : [ {
+    "number" : 1,
+    "payment" : 6.026919,
+    "status" : "PAID"
+  }, {
+    "number" : 2,
+    "payment" : 6.026919,
+    "status" : "PAID"
+  } ],
+  "indCurPayment" : 2
+}, {
+  "contractNumber" : 7,
+  "car" : {
+    "vin" : "123456789qwerYUIu",
+    "brand" : "BMVХхъ{}{???///++...!#$%^&*(",
+    "model" : "BMVх5Ххъ{}{???///++...!#$%^&*(",
+    "year" : "2007",
+    "price" : 23.000000,
+    "status" : "Available"
+  },
+  "client" : {
+    "id" : 1,
+    "fullName" : "Иван Петров",
+    "passportNumber" : "1234567890",
+    "phoneNumber" : "+71234567890"
+  },
+  "monthsCnt" : 2,
+  "initialPayment" : 11.600000,
+  "rate" : 45.6,
+  "status" : "ACTIVE",
+  "paymentSchedule" : [ {
+    "number" : 1,
+    "payment" : 6.026919,
+    "status" : "NOT_PAID"
+  }, {
+    "number" : 2,
+    "payment" : 6.026919,
+    "status" : "NOT_PAID"
+  } ],
+  "indCurPayment" : 0
+}, {
+  "contractNumber" : 8,
+  "car" : {
+    "vin" : "5NPD84LF2KH123456",
+    "brand" : "Hyundai",
+    "model" : "Elantra",
+    "year" : "2021",
+    "price" : 21000.990000,
+    "status" : "InUse"
+  },
+  "client" : {
+    "id" : 1,
+    "fullName" : "Иван Петров",
+    "passportNumber" : "1234567890",
+    "phoneNumber" : "+71234567890"
+  },
+  "monthsCnt" : 2,
+  "initialPayment" : 69.777770,
+  "rate" : 45.6,
+  "status" : "CLOSED",
+  "paymentSchedule" : [ {
+    "number" : 1,
+    "payment" : 11065.853302,
+    "status" : "PAID"
+  }, {
+    "number" : 2,
+    "payment" : 11065.853302,
+    "status" : "PAID"
+  } ],
+  "indCurPayment" : 2
+}, {
+  "contractNumber" : 9,
+  "car" : {
+    "vin" : "5NPD84LF2KH123456",
+    "brand" : "Hyundai",
+    "model" : "Elantra",
+    "year" : "2021",
+    "price" : 21000.990000,
+    "status" : "InUse"
+  },
+  "client" : {
+    "id" : 1,
+    "fullName" : "Иван Петров",
+    "passportNumber" : "1234567890",
+    "phoneNumber" : "+71234567890"
+  },
+  "monthsCnt" : 2,
+  "initialPayment" : 69.777770,
+  "rate" : 45.6,
+  "status" : "ACTIVE",
+  "paymentSchedule" : [ {
+    "number" : 1,
+    "payment" : 11065.853302,
+    "status" : "PAID"
+  }, {
+    "number" : 2,
+    "payment" : 11065.853302,
+    "status" : "NOT_PAID"
+  } ],
+  "indCurPayment" : 1
+} ]
