@@ -1,0 +1,36 @@
+[ {
+  "id" : 1,
+  "fullName" : "Иван Петров",
+  "passportNumber" : "1234567890",
+  "phoneNumber" : "+71234567890"
+}, {
+  "id" : 2,
+  "fullName" : "Мария Смирнова",
+  "passportNumber" : "0987654321",
+  "phoneNumber" : "+79001112233"
+}, {
+  "id" : 3,
+  "fullName" : "Алексей Козлов",
+  "passportNumber" : "5555555555",
+  "phoneNumber" : "+79161234567"
+}, {
+  "id" : 4,
+  "fullName" : "dfgfhfghfh dfghfdgd",
+  "passportNumber" : "6978012345",
+  "phoneNumber" : "+74300512345"
+}, {
+  "id" : 5,
+  "fullName" : "dfgfhfghfh dfghfdgd",
+  "passportNumber" : "5548912345",
+  "phoneNumber" : "+74530812345"
+}, {
+  "id" : 6,
+  "fullName" : "dfgfhfghfh dfghfdgd",
+  "passportNumber" : "5823612345",
+  "phoneNumber" : "+77452712345"
+}, {
+  "id" : 7,
+  "fullName" : "dfgfhfghfh dfghfdgd",
+  "passportNumber" : "7685412345",
+  "phoneNumber" : "+75597312345"
+} ]
