@@ -1,7 +1,7 @@
 # java
 Мои pet-проекты. Более подробное описание проектов во внутренних README.
 
-### Проекты
+### Проекты:
 1. **[CarLeasing](CarLeasing)** — Серия из 8 домашних работ по курсу от IT-компании: от Java Core до Spring, Hibernate и RabbitMQ.
    
 2. **[EduProjects](EduProjects/src/main/java/)** — Задачи по core Java  
@@ -11,9 +11,9 @@
    - **[Kaktusa](EduProjects/src/main/java/Kaktusa)** — Подготовка к собеседованиям (лямбды, Stream API, коллекции, Optional).
 
 
-3. **[EduWebProject](EduWebProject/README.md)** — Веб-приложение на Spring Boot для поиска косметики по ингредиентам.  
+3. **[EduWebProject](EduWebProject)** — Веб-приложение на Spring Boot для поиска косметики по ингредиентам.  
    **Стек**: Spring Boot, Spring MVC/Data JPA, Hibernate, HikariCP, Lombok, Validation, Jackson, JUnit5.  
    **Архитектура**: классический MVC (Entity, Repository, Service, Controller).
    
-**Стек**  
-Java 17/21 • Spring Boot • JPA/Hibernate • SQL • Maven • Git • JUnit
+**Стек:**  
+Java 17/21 • Spring Boot/MVC/Security • JPA/Hibernate • PostgreSQL • RabbitMQ • SQL • Maven • Git • JUnit5 • Mockito
