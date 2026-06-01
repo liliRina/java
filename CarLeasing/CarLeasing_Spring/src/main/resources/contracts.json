@@ -1,0 +1,22 @@
+[ {
+  "contractNumber" : 2,
+  "car" : {
+    "vin" : "JHMGD18503S123456",
+    "brand" : "Honda",
+    "model" : "Accord",
+    "year" : 2020,
+    "price" : 3200000.000000,
+    "status" : "Available"
+  },
+  "client" : {
+    "id" : 6,
+    "fullName" : "Нина",
+    "passportNumber" : "1234567892",
+    "phoneNumber" : "+71234567892",
+    "status" : "NotActiveContract"
+  },
+  "monthsCnt" : 2,
+  "initialPayment" : 10000.000000,
+  "rate" : 23.6,
+  "status" : "CLOSED"
+} ]
