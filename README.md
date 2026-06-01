@@ -2,7 +2,7 @@
 Мои pet-проекты. Более подробное описание проектов во внутренних README.
 
 ### Проекты
-1. **[CarLeasing](CarLeasing/README.md)** — Серия из 8 домашних работ по курсу от IT-компании: от Java Core до Spring, Hibernate и RabbitMQ.
+1. **[CarLeasing](CarLeasing)** — Серия из 8 домашних работ по курсу от IT-компании: от Java Core до Spring, Hibernate и RabbitMQ.
    
 2. **[EduProjects](EduProjects/src/main/java/)** — Задачи по core Java  
    - **[DB](EduProjects/src/main/java/DB)** — Использование БД и многопоточности.
