@@ -1,6 +1,6 @@
 spring:
   application:
-    name: Birch
+    name: Kaktus
   main:
     banner-mode: off
   security:

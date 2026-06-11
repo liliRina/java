@@ -13,8 +13,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 		HibernateJpaAutoConfiguration.class
 })
 @EnableAspectJAutoProxy(proxyTargetClass = true)
-public class BirchApplication {
+public class KaktusApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(BirchApplication.class, args);
+		SpringApplication.run(KaktusApplication.class, args);
 	}
 }
