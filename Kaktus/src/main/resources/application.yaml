@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: Birch
+  main:
+    banner-mode: off
+  security:
+    enabled: false
+  config:
+    import:
+      - classpath:db/datasource.yaml
+      - classpath:db/jpa.yaml
+app:
+  features:
+    showConstr:
+      true
+
+logging:
+  level:
+    root: WARN
+
+    org.springframework: WARN
+    org.springframework.web: WARN
+    org.springframework.boot: WARN
+
+    org.hibernate: ERROR
+    org.hibernate.SQL: OFF
+    org.hibernate.type: OFF
+
+    org.apache.tomcat: ERROR
+
+    com.zaxxer.hikari: ERROR
+
+    #com.eduapp: INFO
+server:
+  servlet:
+    session:
+      timeout: 1800
+      cookie:
+        name: JSESSIONID
+        http-only: true
+        secure: false
+        same-site: lax
+      tracking-modes: cookie

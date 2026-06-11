@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кнопки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-success {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-danger {
+            background-color: #dc3545;
+            color: white;
+        }
+        .btn-warning {
+            background-color: #ffc107;
+            color: black;
+        }
+    </style>
+
+    <script>
+        setInterval(() => {
+            fetch('/get_time')
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('timid_img').src = data.imagePath;
+                    document.querySelector('.hydration-display').innerText = data.hydrationLevel;});
+        }, 5000);
+    </script>
+</head>
+<body>
+<div class="container">
+    <img id="timid_img" th:src="@{${imagePath}}" width="400" height="400">
+    <form action="/blue" method="get">
+        <p class="hydration-display" th:text="${hydrationLevel}">0</p>
+        <button type="submit" class="btn-primary">Полить</button>
+    </form>
+</div>
+</body>
+</html>
