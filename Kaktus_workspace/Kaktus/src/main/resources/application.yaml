@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: Kaktus
+  main:
+    banner-mode: off
+  security:
+    enabled: false
+  config:
+    import:
+      - classpath:db/datasource.yaml
+      - classpath:db/jpa.yaml
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: cactus-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      properties:
+        spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.StringDeserializer
+        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
+        spring.json.trusted.packages: "web_project.weather"
+        spring.json.value.default.type: web_project.weather.WeatherDTO
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    locations: classpath:DB/migration
+
+
+app:
+  features:
+    showConstr:
+      true
+
+logging:
+  level:
+    root: WARN
+
+    org.springframework: WARN
+    org.springframework.web: WARN
+    org.springframework.boot: WARN
+
+    org.hibernate: ERROR
+    org.hibernate.SQL: OFF
+    org.hibernate.type: OFF
+    org.apache.tomcat: ERROR
+    com.zaxxer.hikari: ERROR
+
+server:
+  servlet:
+    session:
+      timeout: 1800
+      cookie:
+        name: JSESSIONID
+        http-only: true
+        secure: false
+        same-site: lax
+      tracking-modes: cookie

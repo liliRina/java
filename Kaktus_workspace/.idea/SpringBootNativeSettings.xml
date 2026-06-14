@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SpringBootNativeSettings">
+    <option name="linkedExternalProjectsSettings">
+      <NativeProjectSettings>
+        <option name="externalProjectPath" value="-DebugSession-" />
+        <option name="runConfigurationId" value="KaktusApplication" />
+      </NativeProjectSettings>
+      <NativeProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Kaktus/src/main/java/web_project" />
+      </NativeProjectSettings>
+      <NativeProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Kaktus/src/test/java/web_project" />
+      </NativeProjectSettings>
+      <NativeProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Weather/src/main/java/web_project" />
+      </NativeProjectSettings>
+    </option>
+  </component>
+</project>

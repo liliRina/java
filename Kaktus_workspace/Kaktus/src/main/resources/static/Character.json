@@ -1,0 +1,33 @@
+{"timid" : {
+  "id": "timid",
+  "name": "Пугливый",
+  "reactions":
+  {"direct_water" : {
+      "trigger": "direct_water",
+      "conditions": [
+        { "param": "fear", "op": "<", "value": 90 },
+        { "param": "status", "op": "!=", "value": "hiding" }
+      ],
+
+      "effect": {
+        "hydration": 20,
+        "fear": 25,
+        "test": "Кактус вздрогнул!",
+        "animation": "gentle_wiggle"
+      }
+
+    },
+    "indirect_water" : {
+      "trigger": "indirect_water",
+      "conditions": [
+        { "param": "player_has_item", "op": "==", "value": "watering_tray" }
+      ],
+      "effect": {
+        "hydration" : 15,
+        "fear" :  -5,
+        "test": "Принял воду через поддон.",
+        "animation": "gentle_wiggle"
+      }
+    }}
+
+}}

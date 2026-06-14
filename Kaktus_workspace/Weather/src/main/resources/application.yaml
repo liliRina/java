@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: Weather
+  main:
+    banner-mode: off
+  security:
+    enabled: false
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      retries: 2                    # количество попыток
+      retry.backoff.ms: 200         # пауза между попытками (мс)
+logging:
+  level:
+    root: WARN
+
+    org.springframework: WARN
+    org.springframework.web: WARN
+    org.springframework.boot: WARN
+
+    org.hibernate: ERROR
+    org.hibernate.SQL: OFF
+    org.hibernate.type: OFF
+    org.apache.tomcat: ERROR
+    com.zaxxer.hikari: ERROR
