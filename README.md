@@ -14,6 +14,8 @@
 3. **[EduWebProject](EduWebProject)** — Веб-приложение на Spring Boot для поиска косметики по ингредиентам.  
    **Стек**: Spring Boot, Spring MVC/Data JPA, Hibernate, HikariCP, Lombok, Validation, Jackson, JUnit5.  
    **Архитектура**: классический MVC (Entity, Repository, Service, Controller).
+4. **[DistanceOnEarth](https://github.com/liliRina/DistanceOnEarth/tree/master)** — Rest API-приложения для сравнения координат адреса из Yandex Maps API и Dadata API.  
+   **Стек**: Java 17, Spring Boot 3, Spring Data JPA, WebClient, MySQL, Lombok, Maven, Docker, Jackson, Jakarta, Validation.
    
 **Стек:**  
 Java 17/21 • Spring Boot/MVC/Security • JPA/Hibernate • PostgreSQL • RabbitMQ • SQL • Maven • Git • JUnit5 • Mockito
